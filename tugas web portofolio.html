@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Es Teh Jumbo asia</title>
+  <style>
+      .map-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Rasio 16:9 */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #008000;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #006400;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+    }
+
+    nav a:hover {
+      background: #004d00;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1624953587688-71062de7e525?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    #profil {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    #profil img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: #008000;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .menu-item {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #008000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Es Teh Jumbo asia</h1>
+    <p>Segar. Jumbo. Nikmat!</p>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#menu">Menu</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section class="hero" id="beranda">
+    <h1>Rasakan Kesegaran Es Teh jumbo Setiap Hari!</h1>
+  </section>
+
+  <!-- Bagian Profil / Pengenalan Diri -->
+  <section id="profil">
+    <img src="https://i.imgur.com/giOPmA9.jpeg" alt="Foto Saya">
+    <h2>Halo, Saya arif cuex a!</h2>
+    <p>Saya pemilik Toko Es Teh Jumbo dengan nama  asia. Saya sangat senang bisa menyajikan minuman segar dan berkualitas untuk Anda semua. Terima kasih sudah mampir!</p>
+  </section>
+
+  <div class="container">
+    <section id="menu">
+      <h2 class="section-title">Menu Kami</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://i.imgur.com/1xwPkpU.jpeg" alt="Es Teh Original">
+          <h3>Es Teh Original</h3>
+          <p>Rp 5.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://i.imgur.com/FOdGNRq.jpeg" alt="Es Teh Lemon">
+          <h3>Es Teh Lemon</h3>
+          <p>Rp 7.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://i.imgur.com/L5NJGOt.jpeg" alt="Es Teh leci">
+          <h3>Es Teh leci</h3>
+          <p>Rp 8.000</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://i.imgur.com/C6Xzkqu.jpeg" alt="Es Teh manggo">
+          <h3>Es Teh manggo</h3>
+          <p>Rp 5.000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang">
+      <h2 class="section-title">Tentang Kami</h2>
+      <p style="text-align: center;">Es Teh Jumbo hadir dengan berbagai varian rasa yang menyegarkan. Kami menggunakan bahan berkualitas dan gula alami. Cocok untuk semua kalangan dan semua cuaca!</p>
+    </section>
+
+    <section id="kontak">
+      <h2 class="section-title">Kontak Kami</h2>
+      <p style="text-align: center;">
+        📍 Alamat: Jl.cepiring margorejo<br>
+        📞 Telp: 0859131051911<br>
+        📧 Email: estehjumboasia@gmail.com
+      </p>
+    </section>
+  </div>
+    <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=-6.8980370,110.1729550&hl=id&z=15&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Es Teh Jumbo. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
